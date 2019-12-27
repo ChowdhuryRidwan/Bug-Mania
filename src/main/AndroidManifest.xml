@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hm14_chowdhury">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="Bug Mania"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.example.hm14_chowdhury.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.hm14_chowdhury.PrefsActivity"
+            android:enabled="true"
+            android:label="Settings"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <category android:name="android.intent.category.PREFERENCE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.hm14_chowdhury.Game"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.example.hm14_chowdhury.Assets" />
+    </application>
+</manifest>
